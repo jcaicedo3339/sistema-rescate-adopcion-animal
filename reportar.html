@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar rescate | Huellas de Esperanza</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Huellas de Esperanza</h1>
+        <p>Registro de nuevos animales rescatados</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reportar.html">Reportar rescate</a>
+        <a href="rescates.html">Ver rescates</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Registrar un animal encontrado</h2>
+
+            <p>
+                Complete los siguientes campos para registrar
+                la información del animal encontrado.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- NOMBRE DEL CASO -->
+                <label for="nombre">
+                    Nombre o título del caso:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ejemplo: Perrito encontrado en la calle"
+                    required
+                >
+
+                <!-- CATEGORIA -->
+                <label for="categoria">
+                    Categoría del animal:
+                </label>
+
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="Perros">Perros</option>
+                    <option value="Gatos">Gatos</option>
+                    <option value="Fauna Silvestre">Fauna Silvestre</option>
+                </select>
+
+                <!-- NIVEL DE URGENCIA -->
+                <fieldset>
+
+                    <legend>Nivel de urgencia médica:</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="urgencia"
+                            value="Alta"
+                            required
+                        >
+                        Alta
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="urgencia"
+                            value="Media"
+                        >
+                        Media
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="urgencia"
+                            value="Baja"
+                        >
+                        Baja
+                    </label>
+
+                </fieldset>
+
+                <!-- DESCRIPCION -->
+                <label for="descripcion">
+                    Descripción del estado del animal:
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    rows="6"
+                    placeholder="Describa dónde fue encontrado y en qué condiciones se encontraba..."
+                    required
+                ></textarea>
+
+                <!-- BOTON -->
+                <button type="submit">
+                    Registrar rescate
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contacto: davidcaicedo015@gmail.com</p>
+        <p>&copy; 2026 lila rescue</p>
+    </footer>
+
+</body>
+</html>
